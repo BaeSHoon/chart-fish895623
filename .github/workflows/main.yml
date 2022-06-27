@@ -17,13 +17,10 @@ jobs:
         with:
           node-version: 16
           cache: "yarn"
-
-      - run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git remote rm origin
-          git remote add origin https://{GH_USERNAME}:${{ secrets.GITHUB_TOKEN }}@github.com/{GH_USERNAME}/project.git
-
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
       - name: Run a multi-line script
         run: |
           yarn install
