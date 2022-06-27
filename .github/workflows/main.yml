@@ -26,6 +26,8 @@ jobs:
           yarn build
       - name: GH Pages deploy
         uses: Cecilapp/GitHub-Pages-deploy@3.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           email: bot@example.com
           build_dir: ./build
