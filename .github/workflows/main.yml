@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v3.3.0
         with: 
           node-version: 16
-          cache: true
+          cache: 'yarn'
 
       - name: Run a multi-line script
         run: |
