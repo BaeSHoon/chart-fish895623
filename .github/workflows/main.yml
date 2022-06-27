@@ -18,8 +18,8 @@ jobs:
           node-version: 16
           cache: "yarn"
       - run: |
-        git config --global user.email "gh-pages@github.com"
-        git config --global user.name "gh-pages-bot"
+          git config --global user.email "gh-pages@github.com"
+          git config --global user.name "gh-pages-bot"
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
