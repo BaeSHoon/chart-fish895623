@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+          Learn React Hello 안녕하세요 작동 잘하는지 확인하려고 테스트 중입니다.
         </p>
         <a
           className="App-link"
@@ -16,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Hello 안녕하세요 작동 잘하는지 확인하려고 테스트 중입니다.
+          Learn React
         </a>
       </header>
     </div>
